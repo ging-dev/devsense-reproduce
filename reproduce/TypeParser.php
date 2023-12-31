@@ -1035,7 +1035,7 @@ final class TypeParser
                 return $generic_param_atomic instanceof TLiteralInt ? $generic_param_atomic->value : null;
             };
 
-            $min_bound = $get_int_range_bound($parse_tree->children[0], $generic_params[0], TIntRange::BOUND_MIN);
+            $min_bound = $get_int_range_bound($parse_tree->children[0], $generic_params[0], TIntRange::BOUND_MIN); # Use of unknown class: 'Psalm\Type\Atomic\TIntRange'
             $max_bound = $get_int_range_bound($parse_tree->children[1], $generic_params[1], TIntRange::BOUND_MAX);
             if ($min_bound === null && $max_bound === null) {
                 return new TInt($from_docblock);

@@ -1464,7 +1464,7 @@ final class Other
                         ForeachAnalyzer::getKeyValueParamsForTraversableObject(
                             $assign_value_atomic_type,
                             $codebase,
-                            $array_access_key_type,
+                            $array_access_key_type, # Use of unassigned variable '$array_access_value_type'
                             $array_access_value_type,
                         );
     
