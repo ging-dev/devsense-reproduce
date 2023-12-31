@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "classmap": ["./reproduce"]
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.18"
+    }
+}
